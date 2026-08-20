@@ -5,7 +5,8 @@ license="MIT"
 modId="emi_ae2_fix"
 version="${file.jarVersion}"
 displayName="EMI AE2 Crafting Plan Fix"
-description='Keeps EMI available on Applied Energistics 2 crafting plan screens.'
+authors="Extra_RawStyle"
+description='修复EMI在AE2下单界面无法进行收藏和查询合成的问题。'
 [[dependencies.emi_ae2_fix]]
 modId="forge"
 mandatory=true
@@ -18,4 +19,3 @@ mandatory=true
 versionRange="[1.1.22,)"
 ordering="AFTER"
 side="CLIENT"
-

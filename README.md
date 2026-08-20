@@ -14,7 +14,7 @@ AE2 合成确认界面的材料表由 AE2 自绘，不使用原版 `Slot`。本�
 ## 下载
 
 直接下载最新构建：
-[`emi-ae2-fix-1.0.5.jar`](https://github.com/Heartlesx/EMI-AE2-Fix/raw/main/build/libs/emi-ae2-fix-1.0.5.jar)
+[`emi-ae2-fix-1.0.6.jar`](https://github.com/Heartlesx/EMI-AE2-Fix/raw/main/build/libs/emi-ae2-fix-1.0.6.jar)
 
 将 JAR 放入 Minecraft 实例的 `mods` 目录，并同时安装：
 
