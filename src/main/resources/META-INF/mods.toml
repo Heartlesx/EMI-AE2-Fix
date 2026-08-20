@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="emi_ae2_fix"
+version="${file.jarVersion}"
+displayName="EMI AE2 Crafting Plan Fix"
+description='Keeps EMI available on Applied Energistics 2 crafting plan screens.'
+[[dependencies.emi_ae2_fix]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.emi_ae2_fix]]
+modId="emi"
+mandatory=true
+versionRange="[1.1.22,)"
+ordering="AFTER"
+side="CLIENT"
+

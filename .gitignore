@@ -1,0 +1,20 @@
+.gradle/
+.gradle-local/
+.gradle-user-home/
+.jdk17/
+ae_classes/
+emi_classes2/
+emi-upstream/
+build/
+run/
+*.zip
+*.jar
+.idea/
+*.iml
+eclipse/
+out/
+
+# Local handoff/repair notes
+HANDOFF.md
+repair-codex-projectless-directory.ps1
+repair-codex-projectless-directory-result.txt

@@ -1,0 +1,58 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
+}
+
+group = 'com.example.emiae2fix'
+version = '1.0.5'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                emiae2fix { source sourceSets.main }
+            }
+        }
+        client { }
+        server { args '--nogui' }
+    }
+}
+
+mixin {
+    add sourceSets.main, 'emi_ae2_fix.refmap.json'
+}
+
+repositories {
+    maven { url = 'https://maven.minecraftforge.net' }
+    maven { url = 'https://maven.parchmentmc.org' }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    compileOnly files('libs/emi-1.1.22+1.20.1+forge.jar')
+    compileOnly files('libs/appliedenergistics2-forge-15.4.10.jar')
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+jar {
+    manifest {
+        attributes([
+            'MixinConfigs': 'emi_ae2_fix.mixins.json',
+            'Implementation-Version': project.version
+        ])
+    }
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
