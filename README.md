@@ -19,9 +19,8 @@ AE2 合成确认界面的材料表由 AE2 自绘，不使用原版 `Slot`。本�
 将 JAR 放入 Minecraft 实例的 `mods` 目录，并同时安装：
 
 - Minecraft Forge 1.20.1
-- EMI 1.1.22（Forge）
-- Applied Energistics 2 15.4.10 或兼容版本
-
+- EMI 1.1.22或以上（Forge）
+- AE 15.4.10
 ## 构建
 
 ```powershell
